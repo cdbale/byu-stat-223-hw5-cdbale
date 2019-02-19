@@ -30,12 +30,12 @@ mean(weights)
 The mean weight of the three mice is 94.
 
 ```{r}
-samps <- expand.grid(weights, weights, weights, weights, weights)
+samps <- expand.grid(weights, weights, weights)
 
 nrow(samps)
 ```
 
-There are 243 possible bootstrap samples.
+There are 27 possible bootstrap samples.
 
 ```{r}
 samps$Mean <- rowMeans(samps)
